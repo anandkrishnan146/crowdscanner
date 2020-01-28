@@ -1,0 +1,152 @@
+@charset "UTF-8";
+
+.fullscreen-bg {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	overflow: hidden;
+	z-index: -100;
+  }
+  
+  .fullscreen-bg__video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+  }
+  
+  @media (min-aspect-ratio: 16/9) {
+	.fullscreen-bg__video {
+	  height: 300%;
+	  top: -100%;
+	}
+  }
+  
+  @media (max-aspect-ratio: 16/9) {
+	.fullscreen-bg__video {
+	  width: 300%;
+	  left: -100%;
+	}
+  }
+  
+  @media (max-width: 767px) {
+	.fullscreen-bg {
+	  background: url('../img/videoframe.jpg') center center / cover no-repeat;
+	}
+  
+	.fullscreen-bg__video {
+	  display: none;
+	}
+  }
+
+.header-navbar {
+	background-color: #fff;
+	border-radius: 0;
+	margin: 0;
+	width: 100%;
+	top: 0;
+	overflow: hidden;
+	z-index: 4;
+	min-height: 100px;
+	padding-top: 27px;
+	border-bottom: 8px solid #0f8ec7;
+}
+
+.header-navbar a{
+	font-weight: 500;
+	font-size: 15px;
+}
+
+.navbar-right li:not(:last-child){
+	border-right: 1px solid #bbb;
+}
+
+.navbar-right li:hover{
+	background-color: #e7e7e7;
+}
+
+.project-name{
+	font-size: 16px;
+	padding: 0 10px;
+}
+
+.company-name{
+	border-right: 2px solid #e7e7e7;
+	padding-right: 10px;
+
+}
+
+
+.header-header-label {
+	padding-right: 30px;
+	cursor: pointer;
+	margin: 30px 0 0 25px;
+}
+
+.header-header-label p{
+	font-size: 27px;
+	font-weight: 500;
+	color: #777;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+	border-color: #e7e7e7;
+}
+
+#canvasOutput + div {
+	display:none !important;
+}
+
+
+td.body{
+  height: 710px;
+  padding: 0 15px 0 15px;
+  color:cornsilk;
+  font-weight: 900;
+  font-size: 20px;
+}
+canvas {
+  border: 5px solid #fff;
+}
+.invisible {
+	display: none;
+}
+.text-center {
+	text-align: center;
+}
+div {
+	margin: 10px;
+}
+.center-block {
+	display: block;
+	margin: auto;
+}
+label {
+	padding-right: 10px;
+	width: 25%;
+	vertical-align: top;
+	font: 16px 'Lucida Grande', sans-serif;
+}
+
+
+
+footer{
+	padding: 40px 20px 15px;
+	background-color: #eaeaea;
+	min-height: 113px;
+	text-align: justify;
+}
+
+footer .media-heading {
+	color: #286090;
+}
+
+
+footer a {
+	color: #0f8ec7;
+	font-weight: 600;
+	cursor: pointer;
+}
